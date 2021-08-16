@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+/* font-family: 'Ubuntu', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat";
+  text-align:center;
+}
+.logo{
+  width:10%;
+}
+/* Headings */
+h1.title-heading{
+  font-weight: 900;
+  font-size: 3em;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+h3{
+    font-weight: 800;
+    line-height: 1.5;
+}
+.features h3 {
+  font-size: 1.32rem; /*This is used since Guaranteed to work was coming in two lines so size is reduced */
+}
+.card-header h3 {
+  font-size: 2rem;
+}
+#cta h3 {
+  font-size: 3.5rem;
+}
+/* Headings closed*/
+
+/* Navigation Bar  */
+.navbar {
+  padding-bottom: 2.5rem;
+}
+.navbar-brand {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+.nav-item {
+  margin: 0% 10%;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+/* Navigation Bar Closed*/
+
+#title {
+  background-color: #ff4c68;
+  color: white;
+  text-align: left;
+}
+.container-fluid {
+  padding: 3% 15%;
+}
+/* For navbar */
+.container-fluid > .container-fluid,
+.in {
+  padding-left: 0%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+img.iphone6 {
+  width: 60%;
+  transform: rotate(25deg);
+  position: relative;
+  left: 16%;
+}
+/* For Download buttons,we gave them a diffrent name from their class btn */
+a, a:hover, a:focus, a:active{
+  text-decoration: none;
+  color: inherit;
+}
+.download-btn {
+  margin: 5% 3% 5% 0%;
+  
+}
+.download-btn {
+      text-decoration: none;
+      color: inherit;
+}
+/* Features */
+#features {
+  padding: 7% 15%;
+  position: relative;
+  z-index: 1;
+}
+.features {
+  padding: 4.5%;
+  text-align: center;
+}
+.features i {
+  /* font-size: 400%;  Instead of increasing size of icon by this we used fa-4x in icon class */
+  margin-bottom: 1rem;
+  color: #ff4c68;
+}
+.features i:hover {
+  color: #f53350af;
+}
+
+.features p {
+  color: #8f8f8f;
+}
+/* Features closed*/
+
+
+/* Testimonials */
+#testimonials {
+  text-align: center;
+  background-color: #f53350af;
+}
+.carousel-inner h2 {
+    color: white;
+  }
+.carousel-item {
+  /* Padding is given to items separately coz if we give padding directly to the section arrows will be squished */
+  padding: 7% 15%;
+}
+.testm-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+/* Testimonials closed */
+
+/* Pricing section */
+#press {
+  background-color: #f53350af;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.press-img {
+  width: 15%;
+  margin: 28px 20px 50px 20px;
+}
+#pricing {
+  padding: 100px;
+  text-align: center;
+  color:#5e454b;
+}
+.pricing {
+  padding: 3% 2%;
+}
+#pricing > h2 {
+  color: #ff4c68;
+}
+/* Pricing section closed */
+
+/* CTA section */
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+  padding: 7% 6%;
+  color: white;
+}
+
+/* Footer */
+
+.fot-icons i {
+  
+  background-color: #ff4c68;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 10px;
+  color:#fff;
+  margin: 1% 0.2%;
+ 
+}
+.fot-icons  i:hover{
+  transform: scale(1.2, 1.2);
+}
+#footer {
+  margin: 10% 0% 0% 0%;
+  padding: 2% 0%;
+  text-align: center;
+  background-color: #ff4c68;
+  color: #fff;
+  
+}
+/* Footer closed */
+
+ /* Media queries */
+@media (max-width: 1028px) /* This is for image and menu */ {
+  #title {
+    text-align: center;
+  }
+  img.iphone6 {
+    position: static;
+    transform: rotate(0);
+  }
+  .nav-link {
+    font-size: 2rem;
+    padding: 2.5%;
+  }
+  .navbar-toggler {
+    font-size: 2.5rem;
+  }
+}
